@@ -5,8 +5,6 @@ Faire un programme qui permet de visualiser des algorithmes de tri (ou autre) av
 
 Structures de données:
 -Listes 2D
--Liste 3D
--Liste chaînées
 
 Décomposition en sous problèmes:
 -Pour chaque structure de données faire une fonction qui permet de la visualiser
@@ -21,7 +19,7 @@ MVP:
 La possibilité de pouvoir visualiser quelques algorithmes de tri
 
 Projet final:
-Avoir un menu naviguable où on peut choisir le type d'algorithme à visualiser ainsi que l'algorithme en question.  
+Avoir un menu naviguable où on peut choisir l'algorithme à visualiser puis pouvoir le visualiser et contrôler la vitesse d'animation.  
 
 Fonctions et classes:
 display_list(list, int, int) -> None:
@@ -34,8 +32,16 @@ selection_sort(list) -> list:
 insertion_sort(list) -> list:
   Permet d'effectuer le tri par insertion d'une liste et afficher cette liste
   à chaque étape du tri grâce à display_list()
+
+bubble_sort(list) -> list:
+  Permet d'effectuer le tri à bulle d'une liste et afficher cette liste
+  à chaque étape du tri grâce à display_list()
+
+cocktail_sort(list) -> list:
+  Permet d'effectuer le tri "cocktail shaker" d'une liste et afficher cette liste
+  à chaque étape du tri grâce à display_list()
   
-class Bouton:
+class Menu:
   représente un bouton clickable 
   
   display():
